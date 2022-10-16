@@ -2,6 +2,7 @@ body{
 
 }
 
+
 img {
     width: 144px;
     height: 87px;
@@ -102,7 +103,11 @@ img {
     margin-left: 19px;
     border-radius: 9px;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.20));
+    position: relative;
 }
+.produto:hover{
+    cursor: pointer;}
+
 
 .foot-menu{
     width: 414px;
@@ -113,7 +118,7 @@ img {
     left: 0;
 }
 
-.buttom {
+.button {
     width:364px ;
     height:61px ;
     border-radius: 50px;
@@ -127,7 +132,29 @@ img {
     justify-content: center;
     align-items: center;
 }
+.button-green {
+    width:364px ;
+    height:61px ;
+    border-radius: 50px;
+    background-color: #32B72F;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+.button-green:hover{
+    cursor: pointer;
+}
+.desativado{
+    display: none;
 
+}
 .texto-up{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -136,7 +163,15 @@ img {
     margin-left: 15px;
     margin-top: 8px;
 }
-.texto-md {
+.texto-md1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color:#A6A6A6;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.texto-md2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -144,13 +179,22 @@ img {
     margin-left: 15px;
     margin-top: 5px;
 }
+
 .texto-bt{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color:#000000;
     margin-left: 15px;
-    margin-top: 8px;
+    margin-top: 12px;
+}
+.texto-bt7{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#000000;
+    margin-left: 15px;
+    margin-top: 12px;
 }
 .texto-1{
     font-family: 'Roboto', sans-serif;
@@ -158,9 +202,33 @@ img {
     font-size: 20px;
     color:#FFFFFF;
 }
-.texto-2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+.icone{
+    bottom: 5px;
+    right: 15px;
+    position: absolute;
     font-size: 20px;
-    color:#FFFFFF;
+    color:transparent;
 }
+.marcador1>ion-icon{
+    color:#32B72F;
+}
+
+.marcador1{
+    border: 3px solid #32B72F;
+    box-sizing: border-box;
+}
+.marcador2>ion-icon{
+    color:#32B72F; 
+}
+.marcador2{
+    border: 3px solid #32B72F;
+    box-sizing: border-box;
+}
+.marcador3>ion-icon{
+    color:#32B72F;
+}
+.marcador3{
+    border: 3px solid #32B72F;
+    box-sizing: border-box;
+}
+

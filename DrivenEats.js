@@ -101,4 +101,3 @@ function mandar_msg_zap(){
     const txt_encoded = encodeURIComponent(uri);
     window.open(`https://wa.me/556196216861?text=${txt_encoded}`);
 }
- 

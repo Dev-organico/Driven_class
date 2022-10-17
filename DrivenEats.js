@@ -15,11 +15,9 @@ function change_leyout_food(marca){
     
     food = document.querySelector(".marcador1 .texto-up").innerHTML
     
-    alert(food)
-
     const price_cut = document.querySelector('.marcador1 .texto-bt').innerHTML.substring(2)
     price_food = Number(price_cut.replace(",","."))
-    alert(price_food)
+    
 
     if(food !== undefined && drink !== undefined && dessert!== undefined){
         change_menu()
@@ -45,11 +43,10 @@ function change_leyout_drink(marca){
 
     drink = document.querySelector(".marcador2 .texto-up").innerHTML
     
-    alert(drink)
 
     const price_cut = document.querySelector('.marcador2 .texto-bt').innerHTML.substring(2)
     price_drink = Number(price_cut.replace(",","."))
-    alert(price_drink)
+   
 
     if(food !== undefined && drink !== undefined && dessert!== undefined){
         change_menu()
@@ -75,11 +72,11 @@ function change_leyout_dessert(marca){
 
     dessert = document.querySelector(".marcador3 .texto-up").innerHTML
     
-    alert(dessert)
+    
 
     const price_cut = document.querySelector('.marcador3 .texto-bt').innerHTML.substring(2)
     price_dessert = Number(price_cut.replace(",","."))
-    alert(price_dessert)
+   
 
     if(food !== undefined && drink !== undefined && dessert!== undefined){
         change_menu()
@@ -95,3 +92,13 @@ function change_menu(){
     change.classList.remove('desativado')
     
 }
+
+let total = price_food + price_drink + price_dessert
+
+function mandar_msg_zap(){
+    let total = (price_food + price_drink + price_dessert).toFixed(2).replace(".",",")
+    const uri = `Olá, gostaria de fazer o pedido:\n- Prato: ${food}\n- Bebida: ${drink}\n- Sobremesa: ${dessert}\nTotal: R$ ${total}`
+    const txt_encoded = encodeURIComponent(uri);
+    window.open(`https://wa.me/556196216861?text=${txt_encoded}`);
+}
+ 
